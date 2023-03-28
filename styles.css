@@ -1,0 +1,451 @@
+@font-face {
+    font-family: 'GUERRILLA Normal';
+    src: url('fonts/GUERRILLA-Normal.woff2') format('woff2'),
+        url('fonts/GUERRILLA-Normal.woff') format('woff'),
+        url('fonts/GUERRILLA-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    margin: 0px;
+    background-color: #161a05;
+}
+.featured_top{
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    display: table;
+    background-image: url('img/Concepts-wide00.gif');
+    margin: 0px;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.table_tr{
+    display: table-row;
+}
+.table_td{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.table_td .act_btn{
+    margin: 10px 5px 0px 5px;
+}
+.table_td .act_btn.blue{
+    background-color: #33bac3;
+}
+.intro_text{
+    padding: 100px 15px;
+    color: #fff;
+    text-align: center;
+}
+.td_wrap{
+    padding: 60px;
+}
+.intro_text h2,
+.partners_section h2{
+    color: #fce93d;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.team_section h2{
+    color: #fce93d;
+    margin: 0px 0px 0px 0px;
+}
+h2{
+      letter-spacing: 1px;
+    font-family: 'GUERRILLA Normal';
+    font-size: 34px;
+    margin: 0px 0px 25px 0px;
+}
+p, ul{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px 0px 25px 0px;
+}
+p a,
+ul a{
+    text-decoration: none;
+        color: #700098;
+    font-weight: bold;
+}
+.intro_vid_card{
+    background-color: #ffe0bb;
+    margin: 0px auto;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: table;
+    box-shadow: 7px 7px #33bac3;
+}
+.intro_vid_card.with_screen{
+    margin: 50px 0px 0px;
+}
+.page_wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 25px;
+}
+.ivc_td.img_side img{
+    width: 100%;
+    height: auto;
+}
+.ivc_tr{
+    display: table-row;
+}
+.ivc_td{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.ivc_td.img_side{
+    background-image: url('img/teaser_doors.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    min-height: 300px;
+}
+.ivc_td.img_side.comp{
+    background-image: none;
+    text-align: center;
+
+}
+
+.ivc_td h2{
+    color: #650d52;
+}
+.logo{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    z-index: 5;
+    width: 100%;
+    max-width: 120px;
+}
+h1{
+    font-family: 'GUERRILLA Normal';
+    color: #fff;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0px 0px 25px 0px;
+    padding: 0px 15px;
+    text-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+}
+.act_btn{
+    font-family: 'GUERRILLA Normal';
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 35px;
+    background-color: #66038a;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.partners_section{
+    background-color: #30003a;
+    padding: 100px 0px;
+    text-align: center;
+}
+.team_section{
+    background-color: #33bac3;
+    padding: 100px 0px;
+    text-align: center;
+}
+.top_partners{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    min-height: 10px;
+}
+.top_partners .single_partner{
+    width: 30%;
+    padding-top: 9%;
+    position: relative;
+    display: inline-block;
+}
+
+.partners_section .act_btn{
+    background-color: #33bac3;
+    margin: 35px 0px 0px 0px;
+}
+.col_wrap{
+    width: 100%;
+    display: inline-block;
+}
+.drop_top_shadow {
+    height: 20%;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    opacity: 0.7;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to top, rgba(28, 33, 43, 0), #1c212b);
+}
+.three_col{
+    width: 33%;
+    min-height: 50px;
+    margin: 15px 0px 0px 0px;
+    text-align: center;
+    display: inline-block;
+}
+.four_col{
+    width: 24.5%;
+    min-height: 50px;
+    margin: 25px 0px 0px 0px;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+.team_pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0px 0px 18px 0px;
+    box-shadow: 5px 5px #fce93d;
+    background-size: cover;
+    background-position: center;
+}
+.four_col h4{
+    line-height: 26px;
+    margin: 0px 0px 12px 0px;
+    font-family: 'GUERRILLA Normal';
+    font-size: 26px;
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+}
+.four_col h5{
+    margin: 0px 0px 15px 0px;
+    font-family: 'GUERRILLA Normal';
+    font-size: 18px;
+    color: #fce93d;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.three_col img{
+    max-height: 70px;
+    height: 100%;
+    width: auto;
+}
+.social_icons{
+    display: inline-block;
+    width: 100%;
+}
+.social_cube{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.social_cube img{
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+.copywrite{
+    position: absolute;
+    font-family: 'GUERRILLA Normal';
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+}
+.partner_cube{
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px solid #000;
+    text-align: center;
+    display: block;
+    position: relative;
+    min-height: 100px;
+    background-color: #700098;
+    padding: 3% 4%;
+    box-shadow: 7px 7px #87c846;
+}
+.single_partner{
+    width: 16.3%;
+    padding-top: 9%;
+    position: relative;
+    display: inline-block;
+}
+.single_partner img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.top_border{
+    position: absolute;
+    z-index: 2;
+    height: 21px;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    background-image: url('img/horizontal_bricks.svg');
+    background-size: 200px;
+    background-position: center;
+}
+.left_border{
+    position: absolute;
+    z-index: 1;
+    width: 21px;
+    left: -1px;
+    top: -1px;
+    bottom: -1px;
+    background-image: url('img/vertical_bricks.svg');
+    background-size: 21px;
+    background-position: center;
+}
+.bot_border{
+    position: absolute;
+    z-index: 2;
+    height: 21px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    background-image: url('img/horizontal_bricks.svg');
+    background-size: 200px;
+    background-position: center;
+}
+.right_border{
+    position: absolute;
+    z-index: 1;
+    width: 21px;
+    right: -1px;
+    top: -1px;
+    bottom: -1px;
+    background-image: url('img/vertical_bricks.svg');
+    background-size: 21px;
+    background-position: center;
+}
+
+.the_footer{
+    text-align: center;
+    padding: 75px 15px;
+    color: #fff;
+    background-color: #000;
+}
+.the_footer p{
+    font-size: 13px;
+    margin: 15px 0px 0px 0px;
+}
+.footer_logo{
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    margin: 0px auto 25px;
+}
+.ivc_td.img_side img.play_icon{
+    width: 15%;
+    height: auto;
+    cursor: pointer;
+}
+.ivc_td.img_side iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.hide_mobile{
+    display: table-cell;
+}
+.show_mobile{
+    display: none;
+}
+@media (max-width: 992px){
+
+  .partner_cube {
+    padding: 7% 6%;
+  }
+  .single_partner {
+    width: 32.33%;
+    padding-top: 11%;
+  }
+  .four_col {
+    width: 100%;
+  }
+  .three_col {
+    width: 100%;
+    margin: 15px 0px;
+}
+.td_wrap{
+    padding: 30px;
+}
+
+  .ivc_td.img_side.comp{
+      padding: 25px 0px 0px 0px;
+  }
+  .ivc_td.img_side.comp img{
+      max-width: 90%;
+  }
+  .ivc_tr {
+      display: block;
+  }
+  .ivc_td {
+      display: block;
+      width: 100%;
+  }
+  .hide_mobile{
+      display: none;
+  }
+  .show_mobile{
+      display: block;
+  }
+}
