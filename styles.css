@@ -50,6 +50,13 @@ body{
 .table_td .act_btn.blue{
     background-color: #33bac3;
 }
+.table_td .act_btn.yellow{
+    background-color: #DD4F0F;
+}
+
+
+
+
 .intro_text{
     padding: 100px 15px;
     color: #fff;
