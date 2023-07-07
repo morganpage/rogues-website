@@ -14,14 +14,26 @@ body{
 .featured_top{
     width: 100%;
     height: 100vh;
-    min-height: 700px;
+    min-height: 780px;
     display: table;
-    background-image: url('img/origins.jpg');
+    background-image: url('img/origins_02.jpg');
     margin: 0px;
     background-size: cover;
     background-position: center center;
     position: relative;
     background-repeat: no-repeat;
+}
+.featured_top .social_icons{
+    position: absolute;
+    width: auto;
+    top: 28px;
+    left: 30px;
+    z-index: 5;
+}
+.featured_top .social_icons .social_cube{
+    margin: 0px 10px 0px 0px;
+    width: 25px;
+    height: 25px;
 }
 .front_trees{
     position: absolute;
@@ -40,12 +52,38 @@ body{
 }
 .table_td{
     display: table-cell;
-    vertical-align: bottom;
-    padding: 0px 0px 100px 0px;
+    vertical-align: middle;
+    padding: 0px 25px 100px 25px;
     text-align: center;
 }
+.table_td input,
+.signup_modal input{
+    border-radius: 8px;
+    border: none;
+    padding: 18px;
+    font-size: 16px;
+    margin: 0px 5px 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.signup_modal h2{
+    font-family: 'GUERRILLA Normal';
+    color: #fff;
+    font-size: 45px;
+    line-height: 45px;
+    margin: 50px 0px 25px 0px;
+    padding: 0px 15px;
+}
+.signup_modal p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0px 0px 25px 0px;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+}
+
 .table_td .act_btn{
-    margin: 10px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
 }
 .table_td .act_btn.blue{
     background-color: #33bac3;
@@ -53,10 +91,38 @@ body{
 .table_td .act_btn.yellow{
     background-color: #DD4F0F;
 }
-
-
-
-
+.top_menu{
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 15px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.top_menu li{
+    display: inline-block;
+    margin: 0px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.top_menu li a{
+    color: #fff;
+}
+li.signup_btn a{
+    padding: 10px 30px;
+    background-color: #66038a;
+    border-radius: 8px;
+    box-shadow: 3px 3px #fce93d;
+}
+.act_btn.top{
+    border-radius: 8px;
+    box-shadow: 5px 5px #fce93d;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 18px 35px;
+}
 .intro_text{
     padding: 100px 15px;
     color: #fff;
@@ -143,24 +209,43 @@ ul a{
 }
 .logo{
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 0px;
     right: 0px;
     margin: auto;
     z-index: 5;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
 }
 h1{
     font-family: 'GUERRILLA Normal';
     color: #fff;
-    font-size: 60px;
-    line-height: 60px;
-    margin: 0px 0px 25px 0px;
+    font-size: 55px;
+    line-height: 55px;
+    margin: 50px 0px 25px 0px;
     padding: 0px 15px;
     /* text-shadow: 2px 2px 10px rgb(0 0 0 / 50%); */
     text-shadow: 2px 2px 15px rgb(0 0 0 / 95%);
 }
+.table_td p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0px 0px 30px 0px;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+}
+.table_td p span,
+.signup_modal p span{
+    color: #fce93d;
+}
+.signup_modal .act_btn{
+    background-color: #33bac3;
+}
+
+
+
+
+
 .act_btn{
     font-family: 'GUERRILLA Normal';
     color: #fff;
@@ -175,7 +260,7 @@ h1{
     text-transform: uppercase;
 }
 .partners_section{
-    background-color: #30003a;
+    background-color: #700098;
     padding: 100px 0px;
     text-align: center;
 }
@@ -218,11 +303,21 @@ h1{
     background-image: linear-gradient(to top, rgba(28, 33, 43, 0), #1c212b);
 }
 .three_col{
-    width: 33%;
+    width: 22%;
+    padding: 0% 1%;
     min-height: 50px;
     margin: 15px 0px 0px 0px;
     text-align: center;
+    vertical-align: middle;
     display: inline-block;
+}
+.three_col img{
+    max-height: 70px;
+    height: 100%;
+    width: auto;
+}
+.three_col img.flow{
+    max-height: 95px;
 }
 .four_col{
     width: 24.5%;
@@ -275,11 +370,7 @@ h1{
 
 
 
-.three_col img{
-    max-height: 70px;
-    height: 100%;
-    width: auto;
-}
+
 .social_icons{
     display: inline-block;
     width: 100%;
@@ -324,14 +415,13 @@ h1{
 .partner_cube{
     border-radius: 20px;
     overflow: hidden;
-    border: 4px solid #000;
     text-align: center;
     display: block;
     position: relative;
     min-height: 100px;
-    background-color: #700098;
+
     padding: 3% 4%;
-    box-shadow: 7px 7px #87c846;
+
 }
 .single_partner{
     width: 16.3%;
@@ -432,10 +522,113 @@ h1{
 .show_mobile{
     display: none;
 }
-@media (max-width: 992px){
+.mob_trigger{
+    display: none;
+    z-index: 10;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.mod_closer{
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.mob_trigger img,
+.mod_closer img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.mobile_menu{
+    background-color: #360044;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 15;
+    display: none;
+}
+.overlay_tbl{
+    position: fixed;
+    width: 100%;
+    height: 100%;
 
+    display: none;
+    background-color: rgb(54 0 68 / 90%);
+    z-index: 100;
+    text-align: center;
+}
+.overlay_tbl.showme{
+    display: table;
+}
+.overlay_tr{
+    display: table-row;
+}
+.overlay_td{
+    display: table-cell;
+    vertical-align: middle;
+}
+.signup_modal{
+    background-color: #700098;
+    position: relative;
+    z-index: 15;
+    margin: auto;
+    display: inline-block;
+    padding: 25px 25px 50px 25px;
+}
+
+@media (max-width: 992px){
+  .hide_mob{
+      display: none;
+  }
+  .featured_top{
+      background-image: url(img/origins_02_mob.jpg);
+  }
+  .logo {
+    top: 80px;
+    width: 100%;
+    max-width: 200px;
+}
+  h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  li.signup_btn a {
+    padding: 15px 50px;
+  }
+  .mob_trigger{
+        display: block;
+    }
+  .top_menu{
+      display: none;
+      position: relative;
+      top: 0px;
+      right: 0px;
+      list-style: none;
+  }
+  .mobile_menu .top_menu{
+        display: block;
+        text-align: center;
+        margin: 100px 0px 0px 0px;
+    }
+    .mobile_menu .top_menu li{
+        width: 100%;
+        margin: 0px 0px 30px 0px;
+    }
   .partner_cube {
-    padding: 7% 6%;
+      padding: 7% 6%;
   }
   .single_partner {
     width: 32.33%;
