@@ -52,7 +52,7 @@
     <ul class="top_menu">
       <li><a href="https://docs.rogues.studio/" target="_blank" rel="noreferrer" title="Rogues Studio Whitepaper">Whitepaper</a></li>
       <li><a href="https://5quymcp5rjd.typeform.com/to/UIi0tKlJ" target="_blank">Contact</a></li>
-      <li class="signup_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScURObQI1Hd_77y7DVXfTmXpoZGIJIzZab2xH3EMhQhReGd0w/viewform" target="_blank">SIGN UP</a></li>
+      <li class="signup_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScURObQI1Hd_77y7DVXfTmXpoZGIJIzZab2xH3EMhQhReGd0w/viewform" target="_blank">PRIORITY LIST</a></li>
       <li><a href="https://game.rogues.studio/" target="_blank" rel="noreferrer" title="Play World of Rogues">Launch game</a></li>
       <li><a href="https://discord.com/invite/rogues" target="_blank" rel="noreferrer" title="Join World of Rogues Discord">Join Discord</a></li>
     </ul>
@@ -84,7 +84,7 @@
     <ul class="top_menu">
       <li><a href="https://docs.rogues.studio/" target="_blank" rel="noreferrer" title="Rogues Studio Whitepaper">Whitepaper</a></li>
       <li><a href="https://5quymcp5rjd.typeform.com/to/UIi0tKlJ" target="_blank" title="Contact Rogues Studio">Contact</a></li>
-      <li class="signup_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScURObQI1Hd_77y7DVXfTmXpoZGIJIzZab2xH3EMhQhReGd0w/viewform" target="_blank" title="Signup to play World of Rogues">SIGN UP</a></li>
+      <li class="signup_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScURObQI1Hd_77y7DVXfTmXpoZGIJIzZab2xH3EMhQhReGd0w/viewform" target="_blank" title="Signup to play World of Rogues">PRIORITY LIST</a></li>
       <li><a href="https://game.rogues.studio/" target="_blank" rel="noreferrer" title="Play World of Rogues">Launch game</a></li>
     </ul>
 
@@ -94,15 +94,21 @@
       <img class="logo" src="img/golden_logo-01.svg" alt="Rogues Studio Logo">
     </a>
 
+
     <div class="table_tr">
       <div class="table_td">
         <h1>Ready to Rebuild?</h1>
-        <p>Play with us this season. Sign up for <span>priority game access:</span></p>
-        <a class="act_btn top plausible-event-name=Signup" href="https://docs.google.com/forms/d/e/1FAIpQLScURObQI1Hd_77y7DVXfTmXpoZGIJIzZab2xH3EMhQhReGd0w/viewform" target="_blank" title="Signup to play World of Rogues">SIGN UP HERE</a>
+        <p>Play with us this season. Sign up for <span>updates:</span></p>
+        <!-- <a class="act_btn top plausible-event-name=Signup" href="https://docs.google.com/forms/d/e/1FAIpQLScURObQI1Hd_77y7DVXfTmXpoZGIJIzZab2xH3EMhQhReGd0w/viewform" target="_blank" title="Signup to play World of Rogues">SIGN UP HERE</a> -->
+
+        <div id="custom-substack-embed" class="substack_iframe"></div>
+
       </div>
     </div>
 
   </div>
+
+
 
   <div class="intro_text">
     <h2>There's a Rogue in all of us</h2>
@@ -429,7 +435,21 @@
 
 
 
-
+  <script>
+    window.CustomSubstackWidget = {
+      substackUrl: "roguestudio.substack.com",
+      placeholder: "Enter your email address",
+      buttonText: "Subscribe",
+      theme: "custom",
+      colors: {
+        primary: "#700098",
+        input: "#EEDDBBF9",
+        email: "#360044",
+        text: "#FFFFFF",
+      }
+    };
+  </script>
+  <script src="https://substackapi.com/widget.js" async></script>
 </body>
 
 </html>
