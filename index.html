@@ -433,8 +433,6 @@
     });
   </script>
 
-
-
   <script>
     window.CustomSubstackWidget = {
       substackUrl: "roguestudio.substack.com",
@@ -448,6 +446,11 @@
         text: "#FFFFFF",
       }
     };
+    window.addEventListener("load", () => {
+      var elements = document.getElementsByClassName("custom-substack-widget");
+      elements[0].classList.add("plausible-event-name=Subscribe");
+    }
+    );
   </script>
   <script src="https://substackapi.com/widget.js" async></script>
 </body>
